@@ -9,4 +9,6 @@ For example, for [1, 2, 2] it should return 9 because 1^2 + 2^2 + 2^2 = 9.
 
 ```js
   const squareSum = (numbers)=> numbers.map(num=>num**2).reduce((acc,item)=>acc+item,0)
+   or
+  const squareSum = (numbers)=>numbers.reduce((sum,num) => sum + (num * num), 0);
 ```
