@@ -1,6 +1,5 @@
 ## Algorithms solved from CodeWars/Hackerrank
 
-
 `001` - Square(n) Sum <br>
 Instructions: <br>
 <br>
