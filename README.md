@@ -66,7 +66,7 @@ if bmi <= 25.0 return "Normal"
 if bmi <= 30.0 return "Overweight"
 if bmi > 30 return "Obese"
 
-Could be done using ternary operator  instead
+Could be done using ternary operator  instead or switch case
 ```js
   const bmi = (weight, height) => {
   if (weight / height ** 2 <= 18.5) return "Underweight";
