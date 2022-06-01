@@ -115,3 +115,14 @@ const countBy = (x, n) => {
   [...Array(n)].map((_, index) => ++index * x);
 }
 ```
+
+`007` - Count by X </br>
+Instructions: </br>
+Implement a function which convert the given boolean value into its string representation.
+Note: Only valid inputs will be given.
+
+```js
+const booleanToString = (b) => return String(b)
+
+}
+```
