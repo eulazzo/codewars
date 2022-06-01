@@ -15,7 +15,7 @@ or
 ```
 
 `002` - A Needle in the Haystack </br>
-Instructions: </br></br>
+Instructions: </br>
 
 Can you find the needle in the haystack?
 Write a function findNeedle() that takes an array full of junk but containing one "needle"
@@ -39,7 +39,7 @@ or
 ```
 
 `003` - Sum without highest and lowest number </br>
-Instructions: </br></br>
+Instructions: </br>
 Sum all the numbers of a given array ( cq. list ), except the highest and the lowest element ( by value, not by index! ).
 The highest or lowest element respectively is a single element at each edge, even if there are more than one with the same value.
 Mind the input validation.
@@ -59,7 +59,7 @@ Example:
 
 
 `004` - Calculate BMI</br>
-Instructions: </br></br>
+Instructions: </br>
 Write function bmi that calculates body mass index (bmi = weight / height2).
 if bmi <= 18.5 return "Underweight"
 if bmi <= 25.0 return "Normal"
@@ -74,4 +74,44 @@ Could be done using ternary operator  instead or switch case
   else if (weight / height ** 2 <= 30.0) return "Overweight";
   else return "Obese";
 };
+```
+
+`005` - Keep hydrated</br>
+Instructions: </br>
+Nathan loves cycling.
+Because Nathan knows it is important to stay hydrated, he drinks 0.5 litres of water per hour of cycling.
+You get given the time in hours and you need to return the number of litres Nathan will drink, rounded to the smallest value.
+For example:
+time = 3 ----> litres = 1
+
+```js
+  const litres = time => Math.floor(time*0.5)
+};
+```
+
+
+`006` - Count by X </br>
+Instructions: </br>
+Create a function with two arguments that will return an array of the first (n) multiples of (x).
+Assume both the given number and the number of times to count will be positive numbers greater than 0.
+Return the results as an array (or list in Python, Haskell or Elixir).
+Examples:
+countBy(1,10) === [1,2,3,4,5,6,7,8,9,10]
+countBy(2,5) === [2,4,6,8,10]
+
+
+```js
+const countBy = (x, n) => {
+  let z = [];
+  
+  for(let i=1;i<=n;i++){
+    z.push(x*i)
+  }
+  return z;
+
+  or 
+  
+  const countBy = (x, n) =>
+  [...Array(n)].map((_, index) => ++index * x);
+}
 ```
