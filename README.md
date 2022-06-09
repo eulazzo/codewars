@@ -105,7 +105,6 @@ time = 3 ----> litres = 1
 
 ```js
   const litres = time => Math.floor(time*0.5)
-};
 ```
 
 
@@ -127,12 +126,14 @@ const countBy = (x, n) => {
     z.push(x*i)
   }
   return z;
+  }
+}
 
   or 
   
   const countBy = (x, n) =>
   [...Array(n)].map((_, index) => ++index * x);
-}
+
 ```
 
 `007` - Count by X </br>
@@ -142,8 +143,6 @@ Note: Only valid inputs will be given.
 
 ```js
 const booleanToString = (b) => return String(b)
-
-}
 ```
 
 `008` - You only need one  </br>
@@ -154,7 +153,6 @@ Return true if the array contains the value, false if not.
 
 ```js
 const check = (a, x) => a.includes(x)
-}
 ```
 `009` - Returning Strings </br>
 Instructions: </br>
@@ -163,5 +161,4 @@ your program should return, "Hello, <name> how are you doing today?".t.
 
 ```js
 const greet = (name) => `Hello, ${name} how are you doing today?`
-}
 ```
