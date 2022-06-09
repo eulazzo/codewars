@@ -197,8 +197,3 @@ const sumTwoSmallestNumbers = (numbers) =>{
   return sortedArr[0] + sortedArr[1];
 }
 ```
-or 
-
-```js
-const digitize = (n) => String(n).split('').map(Number).reverse();
-```
