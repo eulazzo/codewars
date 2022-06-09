@@ -175,3 +175,8 @@ Example(Input => Output):
 ```js
 const digitize = (n) => String(n).split("").map(num=>parseInt(num)).reverse();
 ```
+or 
+
+```js
+const digitize = (n) => String(n).split('').map(Number).reverse();
+```
