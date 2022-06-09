@@ -156,3 +156,12 @@ Return true if the array contains the value, false if not.
 const check = (a, x) => a.includes(x)
 }
 ```
+`009` - Returning Strings </br>
+Instructions: </br>
+Make a function that will return a greeting statement that uses an input; </br>
+your program should return, "Hello, <name> how are you doing today?".t.
+
+```js
+const greet = (name) => `Hello, ${name} how are you doing today?`
+}
+```
