@@ -162,3 +162,16 @@ your program should return, "Hello, <name> how are you doing today?".t.
 ```js
 const greet = (name) => `Hello, ${name} how are you doing today?`
 ```
+`010` - Convert number to reversed array of digits </br>
+Instructions: </br>
+Given a random non-negative number, you have to return the digits of </br>
+this number within an array in reverse order.
+Example(Input => Output):
+
+348597 => [7,9,5,8,4,3]
+0 => [0]
+
+
+```js
+const digitize = (n) => String(n).split("").map(num=>parseInt(num)).reverse();
+```
