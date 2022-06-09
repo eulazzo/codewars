@@ -1,4 +1,4 @@
-## Algorithms solved from CodeWars/Hackerrank
+## Algorithms solved from CodeWars / Hackerrank / Letscode
 
 `000` - Summation <br>
 Instructions: <br>
