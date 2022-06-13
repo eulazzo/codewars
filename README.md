@@ -220,6 +220,7 @@ const digitize = (n) => String(n).split('').map(Number).reverse();
 ```
 
 `012` - Sum of two lowest positive integers </br>
+Instructions: </br>
 Create a function that returns the sum of the two lowest positive numbers </br>
 given an array of minimum 4 positive integers. No floats or non-positive integers will be passed.
 
@@ -237,6 +238,7 @@ const sumTwoSmallestNumbers = (numbers) =>{
 ```
 
 `013` - Beginner Series #1 School Paperwork </br>
+Instructions: </br>
 Your classmates asked you to copy some paperwork for them. You know that there are 'n' </br>
 classmates and the paperwork has 'm' pages.
 
@@ -251,6 +253,7 @@ const paperwork = (n, m) => ( n<0 || m<0 ) ? 0 : n * m
 ```
 
 `014` - Number of People in the Bus</br>
+Instructions: </br>
 There is a bus moving in the city, and it takes and drop some people in each bus stop.
 You are provided with a list (or array) of integer pairs. Elements of each pair represent number of people get into bus (The first item) and number of people get off the bus (The second item) in a bus stop.
 Your task is to return number of people who are still in the bus after the last bus station (after the last array). Even though it is the last bus stop, the bus is not empty and some people are still in the bus, and they are probably sleeping there :D
@@ -268,7 +271,19 @@ const number = (busStops) => {
 }
 ```
 `015` - You Can't Code Under Pressure #1</br>
+Instructions: </br>
 Code as fast as you can! You need to double the integer and return it
+
+```js
+const doubleInteger = (i) => i*2
+```
+
+`016` - Opposites Attract</br>
+Instructions: </br>
+Timmy & Sarah think they are in love, but around where they live, they will only know once they pick a flower each. If one of the flowers has an even number of petals and the other has an odd number of petals it means they are in love.
+
+Write a function that will take the number of petals of each flower and return true if they are in love and false if they aren't.
+
 
 ```js
 const doubleInteger = (i) => i*2
