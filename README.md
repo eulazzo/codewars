@@ -14,8 +14,26 @@ summation(2) -> 3
    else return num + summation( num - 1)
 }
 ```
+`001` - Regex validate PIN code <br>
+Instructions: <br>
+ATM machines allow 4 or 6 digit PIN codes and PIN codes cannot contain anything but exactly 4 digits or exactly 6 digits.
+If the function is passed a valid PIN string, return true, else return false.
+Examples (Input --> Output)
+"1234"   -->  true
+"12345"  -->  false
+"a234"   -->  false
 
-`001` - Find the smallest integer in the array <br>
+```js
+ const validatePIN = (pin) => {
+   let isnum = /^\d+$/.test(pin);
+
+   if((pin.length===4 || pin.length===6) && isnum)
+     return true;
+   else return false;
+  }
+```
+
+`002` - Find the smallest integer in the array <br>
 Instructions: <br>
 Given an array of integers your solution should find the smallest integer.
 For example:
@@ -54,8 +72,20 @@ or
 }
 ```
 
+`003` - Opposites Attract</br>
+Instructions: </br>
+Timmy & Sarah think they are in love, but around where they live, they will only know once they pick a flower each. If one of the flowers has an even number of petals and the other has an odd number of petals it means they are in love.
 
-`002` - Square(n) Sum <br>
+Write a function that will take the number of petals of each flower and return true if they are in love and false if they aren't.
+
+
+```js
+const lovefunc = (flower1, flower2) => 
+  flower1%2 !==flower2%2 
+```
+
+
+`004` - Square(n) Sum <br>
 Instructions: <br>
 <br>
 Complete the square sum function so that it squares each number passed into it and then sums the results together.
@@ -69,7 +99,7 @@ or
   const squareSum = (numbers)=>numbers.reduce((sum,num) => sum + (num * num), 0);
 ```
 
-`003` - A Needle in the Haystack </br>
+`005` - A Needle in the Haystack </br>
 Instructions: </br>
 
 Can you find the needle in the haystack?
@@ -95,7 +125,7 @@ or
   const findNeedle = (haystack) => `found the needle at position ${haystack.indexOf('needle')}`;
 ```
 
-`004` - Sum without highest and lowest number </br>
+`006` - Sum without highest and lowest number </br>
 Instructions: </br>
 Sum all the numbers of a given array ( cq. list ), except the highest and the lowest element ( by value, not by index! ).
 The highest or lowest element respectively is a single element at each edge, even if there are more than one with the same value.
@@ -115,7 +145,7 @@ Example:
 ```
 
 
-`005` - Calculate BMI</br>
+`007` - Calculate BMI</br>
 Instructions: </br>
 Write function bmi that calculates body mass index (bmi = weight / height2).
 if bmi <= 18.5 return "Underweight"
@@ -133,7 +163,7 @@ Could be done using ternary operator  instead or switch case
 };
 ```
 
-`006` - Keep hydrated</br>
+`008` - Keep hydrated</br>
 Instructions: </br>
 Nathan loves cycling.
 Because Nathan knows it is important to stay hydrated, he drinks 0.5 litres of water per hour of cycling.
@@ -146,7 +176,7 @@ time = 3 ----> litres = 1
 ```
 
 
-`007` - Count by X </br>
+`009` - Count by X </br>
 Instructions: </br>
 Create a function with two arguments that will return an array of the first (n) multiples of (x).
 Assume both the given number and the number of times to count will be positive numbers greater than 0.
@@ -174,7 +204,7 @@ const countBy = (x, n) => {
 
 ```
 
-`008` - Count by X </br>
+`010` - Count by X </br>
 Instructions: </br>
 Implement a function which convert the given boolean value into its string representation.
 Note: Only valid inputs will be given.
@@ -183,7 +213,7 @@ Note: Only valid inputs will be given.
 const booleanToString = (b) => return String(b)
 ```
 
-`009` - You only need one  </br>
+`011` - You only need one  </br>
 Instructions: </br>
 You will be given an array a and a value x. All you need to do is check whether the provided array contains the value.
 Array can contain numbers or strings. X can be either.
@@ -192,15 +222,15 @@ Return true if the array contains the value, false if not.
 ```js
 const check = (a, x) => a.includes(x)
 ```
-`010` - Returning Strings </br>
+`012` - Returning Strings </br>
 Instructions: </br>
 Make a function that will return a greeting statement that uses an input; </br>
 your program should return, "Hello, <name> how are you doing today?".t.
 
 ```js
-const greet = (name) => `Hello, ${name} how are you doing today?`
+   const greet = (name) => `Hello, ${name} how are you doing today?`
 ```
-`011` - Convert number to reversed array of digits </br>
+`012` - Convert number to reversed array of digits </br>
 Instructions: </br>
 Given a random non-negative number, you have to return the digits of </br>
 this number within an array in reverse order.
@@ -208,7 +238,6 @@ Example(Input => Output):
 
 348597 => [7,9,5,8,4,3]
 0 => [0]
-
 
 ```js
 const digitize = (n) => String(n).split("").map(num=>parseInt(num)).reverse();
@@ -219,7 +248,7 @@ or
 const digitize = (n) => String(n).split('').map(Number).reverse();
 ```
 
-`012` - Sum of two lowest positive integers </br>
+`014` - Sum of two lowest positive integers </br>
 Instructions: </br>
 Create a function that returns the sum of the two lowest positive numbers </br>
 given an array of minimum 4 positive integers. No floats or non-positive integers will be passed.
@@ -237,7 +266,7 @@ const sumTwoSmallestNumbers = (numbers) =>{
 }
 ```
 
-`013` - Beginner Series #1 School Paperwork </br>
+`015` - Beginner Series #1 School Paperwork </br>
 Instructions: </br>
 Your classmates asked you to copy some paperwork for them. You know that there are 'n' </br>
 classmates and the paperwork has 'm' pages.
@@ -252,7 +281,7 @@ n=-5, m=5:  0
 const paperwork = (n, m) => ( n<0 || m<0 ) ? 0 : n * m 
 ```
 
-`014` - Number of People in the Bus</br>
+`016` - Number of People in the Bus</br>
 Instructions: </br>
 There is a bus moving in the city, and it takes and drop some people in each bus stop.
 You are provided with a list (or array) of integer pairs. Elements of each pair represent number of people get into bus (The first item) and number of people get off the bus (The second item) in a bus stop.
@@ -270,7 +299,7 @@ const number = (busStops) => {
   return numberOfpeopleThatStillOnTheBus;
 }
 ```
-`015` - You Can't Code Under Pressure #1</br>
+`017` - You Can't Code Under Pressure #1</br>
 Instructions: </br>
 Code as fast as you can! You need to double the integer and return it
 
@@ -278,13 +307,4 @@ Code as fast as you can! You need to double the integer and return it
 const doubleInteger = (i) => i*2
 ```
 
-`016` - Opposites Attract</br>
-Instructions: </br>
-Timmy & Sarah think they are in love, but around where they live, they will only know once they pick a flower each. If one of the flowers has an even number of petals and the other has an odd number of petals it means they are in love.
-
-Write a function that will take the number of petals of each flower and return true if they are in love and false if they aren't.
-
-
-```js
-const doubleInteger = (i) => i*2
-```
+ 
