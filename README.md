@@ -15,9 +15,47 @@ summation(2) -> 3
 }
 ```
 
+`001` - Find the smallest integer in the array <br>
+Instructions: <br>
+Given an array of integers your solution should find the smallest integer.
+For example:
+    Given [34, 15, 88, 2] your solution will return 2
+
+ 
+```c
+  #include <stddef.h>
+  int find_smallest_int(int *vec, size_t len){
+      int smallestNumber=vec[0];
+      for(int i=0; i<len;i++){           //Math.min Time Complexity -> O(n) 
+          if(vec[i]<smallestNumber){
+            smallestNumber = vec[i];
+          }
+       }
+     return smallestNumber;
+  }
+  
+```
+or
+ 
+```js
+  class SmallestIntegerFinder {
+  findSmallestInt(args) {
+    return Math.min(...args)        //Math.min Time Complexity -> O(n) 
+  }
+}
+```
+or
+
+```js
+  class SmallestIntegerFinder {
+  findSmallestInt(args) {
+    return args.sort((a,b)=>a-b)[0]     //Sort function has Time Complexity ->  O(n log(n)).
+  }
+}
+```
 
 
-`001` - Square(n) Sum <br>
+`002` - Square(n) Sum <br>
 Instructions: <br>
 <br>
 Complete the square sum function so that it squares each number passed into it and then sums the results together.
@@ -31,7 +69,7 @@ or
   const squareSum = (numbers)=>numbers.reduce((sum,num) => sum + (num * num), 0);
 ```
 
-`002` - A Needle in the Haystack </br>
+`003` - A Needle in the Haystack </br>
 Instructions: </br>
 
 Can you find the needle in the haystack?
@@ -57,7 +95,7 @@ or
   const findNeedle = (haystack) => `found the needle at position ${haystack.indexOf('needle')}`;
 ```
 
-`003` - Sum without highest and lowest number </br>
+`004` - Sum without highest and lowest number </br>
 Instructions: </br>
 Sum all the numbers of a given array ( cq. list ), except the highest and the lowest element ( by value, not by index! ).
 The highest or lowest element respectively is a single element at each edge, even if there are more than one with the same value.
@@ -77,7 +115,7 @@ Example:
 ```
 
 
-`004` - Calculate BMI</br>
+`005` - Calculate BMI</br>
 Instructions: </br>
 Write function bmi that calculates body mass index (bmi = weight / height2).
 if bmi <= 18.5 return "Underweight"
@@ -95,7 +133,7 @@ Could be done using ternary operator  instead or switch case
 };
 ```
 
-`005` - Keep hydrated</br>
+`006` - Keep hydrated</br>
 Instructions: </br>
 Nathan loves cycling.
 Because Nathan knows it is important to stay hydrated, he drinks 0.5 litres of water per hour of cycling.
@@ -108,7 +146,7 @@ time = 3 ----> litres = 1
 ```
 
 
-`006` - Count by X </br>
+`007` - Count by X </br>
 Instructions: </br>
 Create a function with two arguments that will return an array of the first (n) multiples of (x).
 Assume both the given number and the number of times to count will be positive numbers greater than 0.
@@ -136,7 +174,7 @@ const countBy = (x, n) => {
 
 ```
 
-`007` - Count by X </br>
+`008` - Count by X </br>
 Instructions: </br>
 Implement a function which convert the given boolean value into its string representation.
 Note: Only valid inputs will be given.
@@ -145,7 +183,7 @@ Note: Only valid inputs will be given.
 const booleanToString = (b) => return String(b)
 ```
 
-`008` - You only need one  </br>
+`009` - You only need one  </br>
 Instructions: </br>
 You will be given an array a and a value x. All you need to do is check whether the provided array contains the value.
 Array can contain numbers or strings. X can be either.
@@ -154,7 +192,7 @@ Return true if the array contains the value, false if not.
 ```js
 const check = (a, x) => a.includes(x)
 ```
-`009` - Returning Strings </br>
+`010` - Returning Strings </br>
 Instructions: </br>
 Make a function that will return a greeting statement that uses an input; </br>
 your program should return, "Hello, <name> how are you doing today?".t.
@@ -162,7 +200,7 @@ your program should return, "Hello, <name> how are you doing today?".t.
 ```js
 const greet = (name) => `Hello, ${name} how are you doing today?`
 ```
-`010` - Convert number to reversed array of digits </br>
+`011` - Convert number to reversed array of digits </br>
 Instructions: </br>
 Given a random non-negative number, you have to return the digits of </br>
 this number within an array in reverse order.
@@ -181,7 +219,7 @@ or
 const digitize = (n) => String(n).split('').map(Number).reverse();
 ```
 
-`011` - Sum of two lowest positive integers </br>
+`012` - Sum of two lowest positive integers </br>
 Create a function that returns the sum of the two lowest positive numbers </br>
 given an array of minimum 4 positive integers. No floats or non-positive integers will be passed.
 
@@ -198,7 +236,7 @@ const sumTwoSmallestNumbers = (numbers) =>{
 }
 ```
 
-`012` - Beginner Series #1 School Paperwork </br>
+`013` - Beginner Series #1 School Paperwork </br>
 Your classmates asked you to copy some paperwork for them. You know that there are 'n' </br>
 classmates and the paperwork has 'm' pages.
 
@@ -212,7 +250,7 @@ n=-5, m=5:  0
 const paperwork = (n, m) => ( n<0 || m<0 ) ? 0 : n * m 
 ```
 
-`013` - Number of People in the Bus</br>
+`014` - Number of People in the Bus</br>
 There is a bus moving in the city, and it takes and drop some people in each bus stop.
 You are provided with a list (or array) of integer pairs. Elements of each pair represent number of people get into bus (The first item) and number of people get off the bus (The second item) in a bus stop.
 Your task is to return number of people who are still in the bus after the last bus station (after the last array). Even though it is the last bus stop, the bus is not empty and some people are still in the bus, and they are probably sleeping there :D
@@ -229,7 +267,7 @@ const number = (busStops) => {
   return numberOfpeopleThatStillOnTheBus;
 }
 ```
-`014` - You Can't Code Under Pressure #1</br>
+`015` - You Can't Code Under Pressure #1</br>
 Code as fast as you can! You need to double the integer and return it
 
 ```js
