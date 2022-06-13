@@ -26,7 +26,7 @@ For example:
   #include <stddef.h>
   int find_smallest_int(int *vec, size_t len){
       int smallestNumber=vec[0];
-      for(int i=0; i<len;i++){           //Time Complexity -> O(n) 
+      for(int i=0; i<len;i++){           // Time Complexity -> O(n) 
           if(vec[i]<smallestNumber){
             smallestNumber = vec[i];
           }
@@ -40,7 +40,7 @@ or
 ```js
   class SmallestIntegerFinder {
   findSmallestInt(args) {
-    return Math.min(...args)        //Math.min Time Complexity -> O(n) 
+    return Math.min(...args)        // Math.min Time Complexity -> O(n) 
   }
 }
 ```
@@ -49,7 +49,7 @@ or
 ```js
   class SmallestIntegerFinder {
   findSmallestInt(args) {
-    return args.sort((a,b)=>a-b)[0]     //Sort function has Time Complexity ->  O(n log(n)).
+    return args.sort((a,b)=>a-b)[0]     // Sort function Time Complexity ->  O(n log(n)).
   }
 }
 ```
