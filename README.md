@@ -226,7 +226,7 @@ your program should return, "Hello, <name> how are you doing today?".t.
 ```js
    const greet = (name) => `Hello, ${name} how are you doing today?`
 ```
-`012` - Convert number to reversed array of digits </br>
+`013` - Convert number to reversed array of digits </br>
 Instructions: </br>
 Given a random non-negative number, you have to return the digits of </br>
 this number within an array in reverse order.
