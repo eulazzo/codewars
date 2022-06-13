@@ -1,7 +1,7 @@
 ## Algorithms solved from CodeWars / Hackerrank / Letscode
 
-### Goal: Solve 1000 Algorithms
-  * #### 17/1000 done
+* ### Goal: Solve 1000 Algorithms
+  * 17/1000 done
 
 `000` - Summation <br>
 Instructions: <br>
