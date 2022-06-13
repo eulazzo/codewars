@@ -18,25 +18,22 @@ summation(2) -> 3
 Instructions: <br>
 ATM machines allow 4 or 6 digit PIN codes and PIN codes cannot contain anything but exactly 4 digits or exactly 6 digits.
 If the function is passed a valid PIN string, return true, else return false.
-Examples (Input --> Output)
-"1234"   -->  true
-"12345"  -->  false
-"a234"   -->  false
+Examples (Input --> Output) </br>
+"1234"   -->  true </br>
+"12345"  -->  false </br>
+"a234"   -->  false </br>
 
 ```js
  const validatePIN = (pin) => {
    let isnum = /^\d+$/.test(pin);
-
-   if((pin.length===4 || pin.length===6) && isnum)
-     return true;
-   else return false;
-  }
+   return ((pin.length===4 || pin.length===6) && isnum) ? true : false;
+ }
 ```
 
 `002` - Find the smallest integer in the array <br>
 Instructions: <br>
 Given an array of integers your solution should find the smallest integer.
-For example:
+For example:</br>
     Given [34, 15, 88, 2] your solution will return 2
 
  
@@ -75,9 +72,7 @@ or
 `003` - Opposites Attract</br>
 Instructions: </br>
 Timmy & Sarah think they are in love, but around where they live, they will only know once they pick a flower each. If one of the flowers has an even number of petals and the other has an odd number of petals it means they are in love.
-
 Write a function that will take the number of petals of each flower and return true if they are in love and false if they aren't.
-
 
 ```js
 const lovefunc = (flower1, flower2) => 
@@ -89,7 +84,8 @@ const lovefunc = (flower1, flower2) =>
 Instructions: <br>
 <br>
 Complete the square sum function so that it squares each number passed into it and then sums the results together.
-For example, for [1, 2, 2] it should return 9 because 1^2 + 2^2 + 2^2 = 9.
+For example:</br>
+for [1, 2, 2] it should return 9 because 1^2 + 2^2 + 2^2 = 9.
 
 ```js
   const squareSum = (numbers)=> numbers.map(num=>num**2).reduce((acc,item)=>acc+item,0)
@@ -105,7 +101,7 @@ Instructions: </br>
 Can you find the needle in the haystack?
 Write a function findNeedle() that takes an array full of junk but containing one "needle"
 After your function finds the needle it should return a message (as a string) that says:
-"found the needle at position " plus the index it found the needle, so:
+"found the needle at position " plus the index it found the needle, so:</br>
 findNeedle(['hay', 'junk', 'hay', 'hay', 'moreJunk', 'needle', 'randomJunk'])
 should return "found the needle at position 5"
 
@@ -129,7 +125,7 @@ or
 Instructions: </br>
 Sum all the numbers of a given array ( cq. list ), except the highest and the lowest element ( by value, not by index! ).
 The highest or lowest element respectively is a single element at each edge, even if there are more than one with the same value.
-Mind the input validation.
+Mind the input validation.</br>
 
 Example:
   { 6, 2, 1, 8, 10 } => 16
@@ -147,7 +143,7 @@ Example:
 
 `007` - Calculate BMI</br>
 Instructions: </br>
-Write function bmi that calculates body mass index (bmi = weight / height2).
+Write function bmi that calculates body mass index (bmi = weight / height2).</br>
 if bmi <= 18.5 return "Underweight"
 if bmi <= 25.0 return "Normal"
 if bmi <= 30.0 return "Overweight"
