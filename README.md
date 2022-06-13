@@ -39,7 +39,6 @@ Given an array of integers your solution should find the smallest integer.
 For example:</br>
     Given [34, 15, 88, 2] your solution will return 2
 
- 
 ```c
   #include <stddef.h>
   int find_smallest_int(int *vec, size_t len){
@@ -78,8 +77,8 @@ Timmy & Sarah think they are in love, but around where they live, they will only
 Write a function that will take the number of petals of each flower and return true if they are in love and false if they aren't.
 
 ```js
-const lovefunc = (flower1, flower2) => 
-  flower1%2 !==flower2%2 
+**const lovefunc = (flower1, flower2) => 
+  flower1%2 !==flower2%2** 
 ```
 
 
@@ -193,7 +192,6 @@ const countBy = (x, n) => {
     z.push(x*i)
   }
   return z;
-  }
 }
 
   or 
@@ -203,13 +201,13 @@ const countBy = (x, n) => {
 
 ```
 
-`010` - Count by X </br>
+`010` - Boolean To String </br>
 Instructions: </br>
 Implement a function which convert the given boolean value into its string representation.
 Note: Only valid inputs will be given.
 
 ```js
-const booleanToString = (b) => return String(b)
+const booleanToString = (b) => String(b)
 ```
 
 `011` - You only need one  </br>
@@ -239,7 +237,12 @@ Example(Input => Output):
 0 => [0]
 
 ```js
-const digitize = (n) => String(n).split("").map(num=>parseInt(num)).reverse();
+
+const digitize = (n) =>
+  String(n)
+    .split("")
+    .map((num) => parseInt(num))
+    .reverse();
 ```
 or 
 
