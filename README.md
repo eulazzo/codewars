@@ -307,5 +307,31 @@ Code as fast as you can! You need to double the integer and return it
 ```js
 const doubleInteger = (i) => i*2
 ```
+`018` - centuryFromYear /br>
+Instructions: </br>
+Given a year, return the century it is in. The first century spans from the year 1  up to and including the year 100,</br>  the second - from the year 101 up to and including the year 200, etc.
+
+```c
+
+#include <iostream>
+#include <stdio.h>
+#include <stdlib.h>
+
+using namespace std;
+
+int centuryFromYear(int year){
+  int century = 0;
+  for (int i = 0; i < year; i++){
+    year = year - 100;
+    century = century + 1;
+  }
+  return century;
+}
+
+int main(){
+  int century = centuryFromYear(2022);
+  cout << "Century: " << century << endl;
+}
+```
 
  
