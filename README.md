@@ -367,11 +367,7 @@ int main(){
 Instructions: </br>
  Escreva um programa que imprima um triângulo isósceles (de asteriscos),
  de cateto dado pelo utilizador. Por exemplo, se cateto=5, deverá ver-se
-*
-**
-***
-****
-*****
+ 
 
 ```c
  #include <stdio.h>
@@ -390,8 +386,8 @@ Instructions: </br>
     }
   }
 ```
- `021` - Prime numbers x to y /br>
- 
+ `021` - Prime numbers x to y </br>
+
 ```c
   #include <stdio.h>
   #include <stdlib.h>
