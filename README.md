@@ -1,7 +1,14 @@
-## Algorithms solved from CodeWars / Hackerrank / Letscode
+## Algorithms solved from CodeWars / Hackerrank / Leetcode
 
 * ### Goal: Solve 1000 Algorithms
   * 22/1000  
+  
+# I'm following this `roadmap` in order to solve algorithms. 
+You can check it out  <a href="https://neetcode.io/roadmap">Here</a> 
+
+<h1 align="center">
+   <img alt="roadmap" src="github/leetcode_algorithm_roadmap.png"    />
+</h1>
 
 `000` - Summation <br>
 Instructions: <br>
