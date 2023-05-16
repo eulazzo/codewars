@@ -7,7 +7,7 @@
 You can check it out  <a href="https://neetcode.io/roadmap">Here</a> 
 
 <h1 align="center">
-   <img alt="roadmap" src="github/leetcode_algorithm_roadmap.png" width="150px" />
+   <img alt="roadmap" src="github/leetcode_algorithm_roadmap.png"    />
 </h1>
 
 `000` - Summation <br>
